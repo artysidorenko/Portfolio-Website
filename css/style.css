@@ -46,7 +46,7 @@ body {
   height: 2px;
   width: 70%;
   margin-top: 5%;
-  margin-bottom: 5%; 
+  margin-bottom: 5%;
 }
 
 .breakline3 {
@@ -159,7 +159,7 @@ iframe {
   #project2, #project4, #project6 {left: 49%; top: 5%;}
   .project-frame {width: 83%}
   .frame-right {left: 51%!important}
-  .frame-left, .frame-right {top: 5%;!important; width: 76%;}
+  .frame-left, .frame-right {top: 5% !important; width: 76%;}
 }
 
 @media only screen and (max-width: 899px){
@@ -173,4 +173,3 @@ iframe {
   .project-frame {width: 1px; min-width: 150%}
   .frame-right {top:56%}
   }
-
