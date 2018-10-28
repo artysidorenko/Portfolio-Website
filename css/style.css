@@ -3,13 +3,39 @@ body {
   padding-top: 70px;
 }
 
-#banner {
+section {
+  border-bottom: 2px solid grey;
+}
+
+nav {
   font-family: Superclarendon;
   background-color: #5e3c58;
   border-bottom-style: solid;
   border-bottom-color: #540d22;
   min-height: 70px;
   font-size: 1.2em;
+  position: relative;
+}
+
+nav > a {
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  height: 70px;
+  line-height: 70px;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+
+nav > ul > li {
+  display: inline-block;
 }
 
 .navtext {
@@ -17,9 +43,54 @@ body {
   color: white!important;
 }
 
+
+@media only screen and (min-width: 900px) {
+  #checkbox-toggle, nav>label  {display: none;}
+  nav > a {left: 18%;}
+  nav > ul {right: 18%;}
+  nav>ul>li {
+    width: 110px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  nav>label {
+    list-style-type: none;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    height: 70px;
+    line-height: 70px;
+    text-decoration: underline;
+  }
+  nav>label:hover {cursor: pointer;}
+  nav > ul {
+    display: none !important;
+  }
+  #checkbox-toggle {
+     display:none;
+   }
+  #checkbox-toggle:checked + nav {
+     height: 170px !important;
+  }
+  #checkbox-toggle:checked ~ nav>ul {
+     display: flex !important;
+     flex-direction: column;
+     position: absolute;
+     top: 40px;
+     right: 20px;
+  }
+  #checkbox-toggle:checked ~ nav>ul>li {
+     line-height: 30px;
+     text-align: right;
+  }
+}
+
 #biography  {
   background-color: #c7bbc9;
   padding: 5%;
+  height: 250px;
 }
 
 #portfolio, #contactme, .wrapper  {
@@ -112,7 +183,7 @@ body {
 
 .section-wrapper {
   position: relative;
-  z-index: 1;
+  z-index: 100;
   height: 50px;
   padding: 1em;
 }
@@ -146,7 +217,17 @@ iframe {
   border-radius: 1%;
 }
 
+.wrapper > iframe:hover, .wrapper > a:hover {
+  background-color: grey;
+  opacity: 0.5;
+}
+
 @media only screen and (min-width: 900px){
+
+
+
+
+
   .desktop-navbar {
     padding: 0% 15% ;
   }
@@ -163,6 +244,9 @@ iframe {
 }
 
 @media only screen and (max-width: 899px){
+
+
+
   .blurb-sm, .section-title-sm {
     font-size: 1em!important;
   }

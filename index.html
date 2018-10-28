@@ -9,77 +9,79 @@
 <head>
   <meta charset="UTF-8">
   <title>Personal Portfolio Webpage</title>
-
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-light navbar-toggleable-sm fixed-top desktop-navbar" id="banner">
-  <button class="navbar-toggler navbar-toggler-right my-1 py-1" type="button" data-toggle="collapse" data-target="#nav-menu">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="autopointer"><a href="#banner" class="navbar-brand my-1 py-1 navtext">Arty Sidorenko</a></div>
-  <div class="collapse navbar-collapse" id="nav-menu">
-    <ul class="navbar-nav mr-auto">
-    </ul>
-    <ul class="navbar-nav my-1 py-1">
-      <li class="nav-item autopointer"><a class="nav-link navtext" href="#biography">About</a></li>
-      <li class="nav-item autopointer"><a class="nav-link navtext" href="#portfolio">Portfolio</a></li>
-      <li class="nav-item autopointer"><a class="nav-link navtext" href="#contactme">Contact</a></li>
-    </ul>
-  </div>
- </nav>
+  <header>
+    <input type="checkbox" id="checkbox-toggle" aria-label="Dropdown Menu Controll Button">
+    <nav class="desktop-navbar">
+      <a href="#banner" class="navtext" aria-label="Scroll to Top">Arty Sidorenko</a>
+      <label for="checkbox-toggle" class="navtext" aria-label="Dropdown Menu Controll Button">Menu</label>
+      <ul>
+        <li><a class="navtext" href="#biography">About</a></li>
+        <li><a class="navtext" href="#portfolio">Portfolio</a></li>
+        <li><a class="navtext" href="#contactme">Contact</a></li>
+      </ul>
+    <!-- <button class="navbar-toggler navbar-toggler-right my-1 py-1" type="button" data-toggle="collapse" data-target="#nav-menu">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+   </nav>
+ </header>
 
+ <main>
 
-<div class="d-flex justify-content-center mainbody-lg headergap-sm" id="biography">
-  <div class="row-fluid">
-    <img src="./Pic1.jpg" alt="Profile Photo"  id="profile-pic" width=%>
-    <div class="blurb"> <h5 class="blurb-sm"> MBA/ACCA Candidate with professional experience in strategy and finance, passionate about web development and object-oriented programming. </h5>
-      <div class="breakline2"> </div>
-      <h4 class="blurb-sm" style="font-weight: bold"> Commercial Finance - Accounting - Web Design - Programming </h4>
+  <section id="biography">
+     <!-- class="d-flex justify-content-center mainbody-lg headergap-sm"> -->
+    <div class="row-fluid">
+      <img src="./Pic1.jpg" alt="Profile Photo"  id="profile-pic" width=%>
+      <div class="blurb"> <h5 class="blurb-sm"> MBA/ACCA Candidate with professional experience in strategy and finance, passionate about web development and object-oriented programming. </h5>
+        <div class="breakline2"> </div>
+        <h4 class="blurb-sm" style="font-weight: bold"> Commercial Finance - Accounting - Web Design - Programming </h4>
+      </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<div class="mainbody-lg center-break"></div>
+  <!-- <div class="mainbody-lg center-break"></div> -->
 
-<!-- FIXME: Section title not showing in widesceen mode -->
-<div class="section-wrapper mainbody-lg" id="portfolio">
-  <h4 class="section-title-sm" style="font-weight: bold; text-align: center">PORTFOLIO</h4>
-</div>
+  <section id="portfolio">
+    <div class="section-wrapper mainbody-lg" id="portfolio1">
+      <h4 class="section-title-sm" style="font-weight: bold; text-align: center">LATEST PROJECTS:</h4>
+    </div>
 
-<div class="wrapper mainbody-lg">
-  <a href="https://codepen.io/artysidorenko/fullcpgrid/bRvqPR" target="_blank" id="project1" style="cursor:pointer"></a>
-  <iframe class="project-frame frame-left" src="https://codepen.io/artysidorenko/fullcpgrid/bRvqPR" scrolling="no"></iframe>
-  <a href="https://codepen.io/artysidorenko/fullcpgrid/wqpvXm" target="_blank" id="project2" style="cursor:pointer"></a>
-  <iframe class="project-frame frame-right" src="https://codepen.io/artysidorenko/fullcpgrid/wqpvXm" scrolling="no"></iframe>
-</div>
+    <div class="wrapper mainbody-lg">
+      <a href="https://artysidorenko.github.io/Calculator/" target="_blank" id="project1" style="cursor:pointer"></a>
+      <iframe class="project-frame frame-left" src="https://artysidorenko.github.io/Calculator/" scrolling="no"></iframe>
+      <a href="https://codepen.io/artysidorenko/fullcpgrid/wqpvXm" target="_blank" id="project2" style="cursor:pointer"></a>
+      <iframe class="project-frame frame-right" src="https://codepen.io/artysidorenko/fullcpgrid/wqpvXm" scrolling="no"></iframe>
+    </div>
 
-<div class="wrapper mainbody-lg">
-  <a href="https://codepen.io/artysidorenko/fullcpgrid/wqVzJK" target="_blank" id="project3" style="cursor:pointer"></a>
-  <iframe class="project-frame frame-left" src="https://codepen.io/artysidorenko/fullcpgrid/wqVzJK" scrolling="no"></iframe>
-  <a href="https://codepen.io/artysidorenko/fullcpgrid/bRvqPR" target="_blank" id="project4" style="cursor:pointer"></a>
-  <iframe class="project-frame frame-right" src="https://images.unsplash.com/photo-1496681859237-6039cd585c4e?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=&bg=" scrolling="no"></iframe>
-</div>
+    <div class="wrapper mainbody-lg">
+      <a href="https://codepen.io/artysidorenko/fullcpgrid/wqVzJK" target="_blank" id="project3" style="cursor:pointer"></a>
+      <iframe class="project-frame frame-left" src="https://codepen.io/artysidorenko/fullcpgrid/wqVzJK" scrolling="no"></iframe>
+      <a href="https://codepen.io/artysidorenko/fullcpgrid/bRvqPR" target="_blank" id="project4" style="cursor:pointer"></a>
+      <iframe class="project-frame frame-right" src="https://images.unsplash.com/photo-1496681859237-6039cd585c4e?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=&bg=" scrolling="no"></iframe>
+    </div>
 
-<div class="wrapper mainbody-lg">
-  <a href="https://codepen.io/artysidorenko/fullcpgrid/bRvqPR" target="_blank" id="project5" style="cursor:pointer"></a>
-  <iframe class="project-frame frame-left" src="https://images.unsplash.com/photo-1497128742402-653a7e07f344?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=&bg=" scrolling="no"></iframe>
-  <a href="https://codepen.io/artysidorenko/fullcpgrid/bRvqPR" target="_blank" id="project6" style="cursor:pointer"></a>
-  <iframe class="project-frame frame-right" src="https://images.unsplash.com/photo-1463579934088-98fe605ed062?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=&bg=" scrolling="no"></iframe>
-</div>
+    <div class="wrapper mainbody-lg">
+      <a href="https://codepen.io/artysidorenko/fullcpgrid/bRvqPR" target="_blank" id="project5" style="cursor:pointer"></a>
+      <iframe class="project-frame frame-left" src="https://images.unsplash.com/photo-1497128742402-653a7e07f344?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=&bg=" scrolling="no"></iframe>
+      <a href="https://codepen.io/artysidorenko/fullcpgrid/bRvqPR" target="_blank" id="project6" style="cursor:pointer"></a>
+      <iframe class="project-frame frame-right" src="https://images.unsplash.com/photo-1463579934088-98fe605ed062?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=&bg=" scrolling="no"></iframe>
+    </div>
+  </section>
 
-<div class="mainbody-lg center-break"></div>
+  <section>
+  </section>
+
+  <!-- <div class="mainbody-lg center-break"></div> -->
+
+ </main>
 
 <!-- TODO: include static form, or preferably a modal, to allow visitor to leave a message (and not link directly to email) -->
 
-<div class="mainbody-lg" id="contactme">
+<footer class="mainbody-lg" id="contactme">
   <h4 class="section-title-sm" style="font-weight: bold; text-align: center">CONTACT ME</h4>
   <div class="breakline3 mx-auto"> </div>
   <div class="ml-auto mr-auto" id="contactlinks">
@@ -87,15 +89,15 @@
     <a href="mailto:asidorenko@gmx.com" rel="nofollow" target="_blank" class="fa fa-2x fa-envelope link-format autopointer"></a>
     <a href="https://www.linkedin.com/in/arty-sidorenko-536a3927/" rel="nofollow" target="_blank" class="fa fa-2x fa-linkedin link-format autopointer"></a>
   </div>
-</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+</footer>
+
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
 
 
 
-    <script  src="js/index.js"></script>
-
+    <script  src="js/index.js"></script> -->
 
 
 
