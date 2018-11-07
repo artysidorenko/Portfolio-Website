@@ -178,6 +178,8 @@ nav > ul > li {
   margin-left: 10%;
   margin-right: 10%;
   list-style-type: none;
+  border: 1px solid grey;
+  padding-right: 5px;
 }
 
 #resumé > details > ul > li {
@@ -189,6 +191,15 @@ nav > ul > li {
     display: inline-block;
     text-align: center;
     width: 250px;
+  }
+  #resumé>details>div {
+    width: 700px;
+    height: 400px;
+  }
+  #resumé>details>ul {
+    position: absolute;
+    left: 0px;
+    top: 65px;
   }
 }
 

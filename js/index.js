@@ -1,16 +1,15 @@
-$(document).ready(function() {
 
-$('a[href^="#"]').on('click', function(event) {
+function closeJS() {
+     document.getElementById("jobDetails").open = false;
+     document.getElementById("skillDetails").open = false;
+ }
 
-    var target = $(this.getAttribute('href'));
+ function closeES() {
+      document.getElementById("eduDetails").open = false;
+      document.getElementById("skillDetails").open = false;
+  }
 
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top - 70
-        }, 1000);
-    }
-
-});
-
-});
+  function closeEJ() {
+       document.getElementById("jobDetails").open = false;
+       document.getElementById("eduDetails").open = false;
+   }
