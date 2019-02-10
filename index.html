@@ -10,31 +10,202 @@
   <meta charset="UTF-8">
   <title>Personal Portfolio Webpage</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/timelines.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
   <header>
-    <input type="checkbox" id="checkbox-toggle" aria-label="Dropdown Menu Controll Button">
-    <nav class="desktop-navbar">
-      <a href="#banner" class="navtext" aria-label="Scroll to Top">Arty Sidorenko</a>
-      <label for="checkbox-toggle" class="navtext" aria-label="Dropdown Menu Controll Button">Menu</label>
-      <ul>
-        <li><a class="navtext" href="#biography">About</a></li>
-        <li><a class="navtext" href="#portfolio">Portfolio</a></li>
-        <li><a class="navtext" href="#contactme">Contact</a></li>
-      </ul>
+    <nav class="navbar__nav navbar navbar-expand-md fixed-top">
+      <a href="#welcomePage" class="navbar-brand" aria-label="Scroll to Top">Arty Sidorenko</a>
+      <button class="navbar-toggler navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation" onclick="rotate(this)">
+        <span class="sr-only">Toggle navigation</span>
+        <div class="icon-bar bar1"></div>
+        <div class="icon-bar bar2"></div>
+        <div class="icon-bar bar3"></div>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navList">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="#bioPage">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolioPage">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contactPage">Contact</a></li>
+        </ul>
+      </div>
    </nav>
  </header>
 
  <main>
 
-  <section id="summarybio">
-    <p> Current MBA Student and ACCA Finalist, self-teaching Web design and computer programming with the hope of gaining experience in the IT/Technology sector. </p>
-    <hr aria-label="">
-    <img src="./Pic1.jpg" alt="Profile Photo"  id="profile-pic" width=%>
-    <strong> Core Skills: Finance & Accounting - Business Studies - Web/Computer Programming </strong>
-  </section>
+   <section id="welcomePage" class="section__container welcome__container">
+     <div class="welcome__div">
+       <div class="welcome__box">
+         <h1 class="welcome__text">Welcome to My Homepage!</h1>
+         <a href="#bioPage" class="btn btn-secondary welcome__text">Continue</a>
+       </div>
+     </div>
+   </section>
+
+   <section id="bioPage" class="section__container bio__container">
+     <div class="section__titleBox">
+       <h1 class="section__title bio__title">About Me</h1>
+     </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg mx-auto">
+          <div class="container">
+
+          	<div class="timeline-item" date-is='2017-2018'>
+          		<h4>Self-teach programming and begin working on personal projects</h4>
+          		<p>
+          			Towards the end of 2017 began learning web coding (FreeCodeCamp) and Java programming (Revature online curriculum). As my interest grew I learned more extensive skills and frameworks including Node/Express.js, SQL/ORM and React.
+          		</p>
+          	</div>
+
+            <div class="timeline-item" date-is='2015-2016'>
+          		<h4>Left work to Study an MBA</h4>
+          		<p>
+          			After 4 years working as a financial analyst then finance manager across London and Brighton, I left Amex to embark on an MBA at London Business School, looking to learn more about what kind of work interests me.
+          		</p>
+          	</div>
+
+          	<div class="timeline-item" date-is='2010-2011'>
+          		<h4>Started working in Financial Analysis</h4>
+          		<p>
+          			After a 6 month internship as a quantitative research assistant (including my first exposure to a command line interface via Stata), went on to join American Express as a financial analyst in London.
+          		</p>
+          	</div>
+
+          	<div class="timeline-item" date-is='2008-2009'>
+          		<h4>Completed Bachelors' and Masters' Degrees in Economics</h4>
+          		<p>
+          			Studied Economics and Natural Sciences at Trinity College, Cambridge, followed by a 1 year MSc in Development Economics at SOAS.
+          		</p>
+          	</div>
+
+          </div>
+        </div>
+        <div class="col-lg">
+          <img class="img-fluid d-block mx-auto bio__img" src="./img/Pic1.jpg" alt="Profile Photo"  id="profile-pic">
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <section id="portfolioPage" class="section__container portfolio__container">
+     <div class="section__titleBox">
+       <h1 class="section__title portfolio__title">Example Projects</h1>
+     </div>
+
+     <div class="container">
+       <div class="row">
+
+         <div class="col-lg">
+           <div class="markdown__container my-3 mx-auto">
+             <img class="img-fluid markdown__img" src="./img/MarkdownProject.png" alt="Markdown Project">
+             <p class="markdown__overlay">Markdown Previewer - Click to Learn More</p>
+           </div>
+
+             <div class="modal__container markdown__modal">
+               <span class="modal__close markdown__close">×</span>
+               <img class="modal__img" id="img01">
+               <div class="modal__caption">
+                   Link: https://markdown-preview-pj.netlify.com/
+                   Description: Simple React-based Markdown previewer. <br>
+                   Learning Goals: Implement live UI changes on user input. <br>
+                   Frameworks Used: <br>
+                      Front-End: React.js <br>
+                      Back-End: N/A - webpage is a Front-End SPA <br>
+                      Build: Node.js & Webpack
+                   Source Code: https://github.com/artysidorenko/markdown-preview
+               </div>
+             </div>
+
+         </div>
+
+         <div class="col-lg">
+           <div class="drum__container my-3 mx-auto">
+             <img class="img-fluid drum__img" src="./img/DrumMachine.png" alt="Drum Project">
+             <p class="drum__overlay">Drum Machine Simulator - Click to Learn More</p>
+           </div>
+
+           <div class="modal__container drum__modal">
+              <span class="modal__close drum__close">×</span>
+              <img class="modal__img" id="img01">
+              <div class="modal__caption">
+                  Link: https://drum-machine-pj-webpack.netlify.com/
+                  Description: React-based Drum Machine Simulator. <br>
+                  Learning Goals: Interactive UI Components. <br>
+                  Frameworks Used: <br>
+                     Front-End: React.js <br>
+                     Back-End: N/A - webpage is a SPA <br>
+                  Build: Node.js & Webpack
+                  Source Code: https://github.com/artysidorenko/DrumMachine_webpack
+              </div>
+           </div>
+
+         </div>
+
+         <div class="col-lg">
+           <div class="pizza__container my-3 mx-auto">
+             <img class="img-fluid pizza__img" src="./img/PracticePizza.png" alt="Pizza Project">
+             <p class="pizza__overlay">Pizza Recipe Sharing Portal - Click to Learn More</p>
+           </div>
+           <div class="modal__container pizza__modal">
+             <span class="modal__close pizza__close">×</span>
+             <img class="modal__img" id="img01">
+             <div class="modal__caption">
+                 Link: https://practicepizza.herokuapp.com/
+                 Description: Full stack web application for sharing pizza recipes. <br>
+                 Learning Goals: Template rendering and Database management <br>
+                 Frameworks Used: <br>
+                    Front-End: N/A - Static Webapp <br>
+                    Back-End: Express.js, Handlebars Templating, SQL + Sequelize ORM <br>
+                 Build: Node.js
+                 Source Code: https://github.com/artysidorenko/PracticePizza
+             </div>
+           </div>
+         </div>
+
+         <div class="col-lg">
+           <div class="leghorn__container my-3 mx-auto">
+             <img class="img-fluid leghorn__img" src="./img/Leghorn.png" alt="Leghorn Project">
+             <p class="leghorn__overlay">Leghorn Chat/Reply WebApp - Click to Learn More</p>
+           </div>
+           <div class="modal__container leghorn__modal">
+             <span class="modal__close leghorn__close">×</span>
+             <img class="modal__img" id="img01">
+             <div class="modal__caption">
+                Link: https://leghorn-pj.herokuapp.com/
+                Description: Full stack web application for user status messaging/replying. <br>
+                Learning Goals: Implement user authentication and database management (w/o external framework). <br>
+                Frameworks Used: <br>
+                   Front-End: N/A - Static Webapp <br>
+                   Back-End: Node http core, PostGreSQL, bcrypt encryption <br>
+                Build: Node.js
+                Source Code: https://github.com/artysidorenko/Leghorn
+             </div>
+           </div>
+         </div>
+
+       </div>
+     </div>
+
+   </section>
+
+
+
+   <section id="contactPage" class="section__container contact__container">
+
+   </section>
+
+
 
   <section id="resumé">
     <h1>Education & Experience</h1>
@@ -76,11 +247,11 @@
           <i>(January 2011 – April 2013)</i><br>
           Supported the International Card Services (ICS) business unit, providing value add financial analysis as part of the group’s investment optimisation team.</li>
         <li><strong>Project Research Assistant – Institute of Fiscal Studies, UK</strong><br>
-          <i>(February 2010– June 2010)</i><br>
+          <i>(February 2010– June 2010)</i><br>
           Project intern responsible for primary research data analysis.</li>
       </ul>
     </details>
-    <details open id="skillDetails">
+    <details id="skillDetails">
       <summary onclick="closeEJ()">Other Skills & Qualifications</summary>
       <div>&nbsp</div>
       <ul>
@@ -103,37 +274,7 @@
     </details>
   </section>
 
-  <section id="portfolio">
-    <div class="section-wrapper mainbody-lg" id="portfolio1">
-      <h4 class="section-title-sm" style="font-weight: bold; text-align: center">LATEST PROJECTS:</h4>
-    </div>
 
-    <div class="wrapper mainbody-lg">
-      <a href="https://artysidorenko.github.io/Calculator/" target="_blank" id="project1" style="cursor:pointer"></a>
-      <iframe class="project-frame frame-left" src="https://artysidorenko.github.io/Calculator/" scrolling="no"></iframe>
-      <a href="https://codepen.io/artysidorenko/fullcpgrid/wqpvXm" target="_blank" id="project2" style="cursor:pointer"></a>
-      <iframe class="project-frame frame-right" src="https://codepen.io/artysidorenko/fullcpgrid/wqpvXm" scrolling="no"></iframe>
-    </div>
-
-    <div class="wrapper mainbody-lg">
-      <a href="https://codepen.io/artysidorenko/fullcpgrid/wqVzJK" target="_blank" id="project3" style="cursor:pointer"></a>
-      <iframe class="project-frame frame-left" src="https://codepen.io/artysidorenko/fullcpgrid/wqVzJK" scrolling="no"></iframe>
-      <a href="https://codepen.io/artysidorenko/fullcpgrid/bRvqPR" target="_blank" id="project4" style="cursor:pointer"></a>
-      <iframe class="project-frame frame-right" src="https://images.unsplash.com/photo-1496681859237-6039cd585c4e?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=&bg=" scrolling="no"></iframe>
-    </div>
-
-    <div class="wrapper mainbody-lg">
-      <a href="https://codepen.io/artysidorenko/fullcpgrid/bRvqPR" target="_blank" id="project5" style="cursor:pointer"></a>
-      <iframe class="project-frame frame-left" src="https://images.unsplash.com/photo-1497128742402-653a7e07f344?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=&bg=" scrolling="no"></iframe>
-      <a href="https://codepen.io/artysidorenko/fullcpgrid/bRvqPR" target="_blank" id="project6" style="cursor:pointer"></a>
-      <iframe class="project-frame frame-right" src="https://images.unsplash.com/photo-1463579934088-98fe605ed062?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=&bg=" scrolling="no"></iframe>
-    </div>
-  </section>
-
-  <section>
-  </section>
-
-  <!-- <div class="mainbody-lg center-break"></div> -->
 
  </main>
 
