@@ -33,16 +33,27 @@ $(document).ready(function(){
 
   var projects = ['markdown', 'pizza', 'leghorn', 'drum'];
   projects.forEach(function(elem) {
-    // Modal opens up upon clicking img
-    $('.' + elem + '__img').click(function() {
-      $('.' + elem + '__modal').addClass('.modal__container--visible');
+    // Modal opens up upon clicking project container (the hover overlay)
+    $('.' + elem + '__container').click(function() {
+      $('.' + elem + '__modal').css('display', 'flex');
       // On open attach new event listener: Modal closes upon clicking X or hitting Escape
-      $('.' + elem + '__close').one('click', function() {
-        $('.' + elem + '__modal').removeClass('.modal__container--visible');
+      $('.' + elem + '__close').click(function() {
+        $('.' + elem + '__modal').css('display', 'none');
       });
-      $(window).one('keydown', function(event) {
-        if (event.key == 'Escape') $('.' + elem + '__modal').removeClass('.modal__container--visible');
+      $(window).keydown(function(event) {
+        if (event.key == 'Escape') {
+          $('.' + elem + '__modal').css('display', 'none');
+        }
       });
+
+      // $('.' + elem + '__modal').addClass('.modal__container--visible');
+      // // On open attach new event listener: Modal closes upon clicking X or hitting Escape
+      // $('.' + elem + '__close').one('click', function() {
+      //   $('.' + elem + '__modal').removeClass('.modal__container--visible');
+      // });
+      // $(window).one('keydown', function(event) {
+      //   if (event.key == 'Escape') $('.' + elem + '__modal').removeClass('.modal__container--visible');
+      // });
     });
   });
 
