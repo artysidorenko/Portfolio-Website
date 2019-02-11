@@ -21,8 +21,24 @@ html {
   background-color: #c7bbc9;
 }
 
+.contact__container {
+  height: 500px!important;
+  min-height: 500px!important;
+}
+
 .portfolio__container {
   background-color: #e6d8e8;
+}
+
+.footer__container {
+  background-color: #5e3c58;
+  color: #c7bbc9;
+  margin: auto;
+}
+.footer__footnote {
+  margin:auto;
+  text-align: center;
+  padding: 10px 0;
 }
 
 .navbar__nav a {
@@ -124,6 +140,7 @@ html {
 }
 
 .markdown__container:hover .markdown__img {
+  filter: blur(1px);
   opacity: 0.4;
   -webkit-transition: opacity 1s; /* Safari */
   transition: opacity 1s;
@@ -135,6 +152,7 @@ html {
 }
 
 .drum__container:hover .drum__img {
+  filter: blur(1px);
   opacity: 0.4;
   -webkit-transition: opacity 1s; /* Safari */
   transition: opacity 1s;
@@ -146,6 +164,7 @@ html {
 }
 
 .pizza__container:hover .pizza__img {
+  filter: blur(1px);
   opacity: 0.4;
   -webkit-transition: opacity 1s; /* Safari */
   transition: opacity 1s;
@@ -157,6 +176,7 @@ html {
 }
 
 .leghorn__container:hover .leghorn__img {
+  filter: blur(1px);
   opacity: 0.4;
   -webkit-transition: opacity 1s; /* Safari */
   transition: opacity 1s;
@@ -165,4 +185,58 @@ html {
   opacity: 1;
   -webkit-transition: opacity 1s; /* Safari */
   transition: opacity 1s;
+}
+
+.contact__linkBox {
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+  height: 150px;
+}
+
+.contact__link {
+  height: 64px;
+  line-height: 61px; /* need to manually adjust line height to center img with fa icons */
+}
+
+.contact__img {
+  height: 56px;
+  border-radius: 3px;
+}
+
+.contact__logo:hover {
+  filter: sepia(100%);
+  filter: blur(1px);
+}
+
+.contact__img:hover {
+  filter: sepia(100%);
+  filter: blur(1px);
+}
+
+.contact__navBox {
+  position: relative;
+  top: 30%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.contact__navBtn {
+  color: #c7bbc9!important;
+  font-weight: bold!important;
+  font-size: 1.5em!important;
+}
+
+.fa-facebook-square {
+  color: rgb(41, 72, 125);
+}
+
+.fa-linkedin {
+  color: #006097;
+}
+
+.fa-github-square {
+  color: black;
 }
