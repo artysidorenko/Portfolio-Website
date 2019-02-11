@@ -6,9 +6,12 @@
   "dependencies": {
     "jquery": "^3.3.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d /"
   },
   "repository": {
     "type": "git",

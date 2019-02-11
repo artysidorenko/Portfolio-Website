@@ -9,7 +9,10 @@ html {
 
 @media screen and (max-width: 768px) {
   .section__container {
-      padding: 10px;
+      padding: 30px;
+  }
+  .section__title {
+    font-size: 2em;
   }
 }
 
