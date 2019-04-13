@@ -31,7 +31,7 @@ $(document).ready(function(){
 
   // Script to be applied similarly to each project thumbnail
 
-  var projects = ['markdown', 'pizza', 'leghorn', 'drum'];
+  var projects = ['ghstats', 'markdown', 'pizza', 'leghorn', 'drum'];
   projects.forEach(function(elem) {
     // Modal opens up upon clicking project container (the hover overlay)
     $('.' + elem + '__container').click(function() {
