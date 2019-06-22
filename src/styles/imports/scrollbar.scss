@@ -1,0 +1,65 @@
+.fp-right {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  opacity: 0.5;
+  right: 25px;
+  top: 150px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.fp-sr-only {
+  display: none;
+}
+
+.fp-right a {
+  position: relative;
+  left: 3px;
+}
+
+span {
+  background-color: black;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  display: block;
+  left: 3px;
+}
+
+.fp-right .active {
+  left: 0px!important;
+}
+
+.fp-right .active span {
+  width: 12px!important;
+  height: 12px!important;
+}
+
+.fp-slidesNav {
+  transition: all 700ms ease 0s;
+  position: absolute;
+  left: 10px;
+  top: 85px; 
+  opacity: 0.5;
+}
+
+.fp-slidesNav .active span {
+  width: 12px!important;
+  height: 12px!important;
+}
+
+.fp-slidesNav ul {
+  display: flex;
+  align-items: center;
+}
+.fp-slidesNav ul li {
+  margin: 10px;
+}

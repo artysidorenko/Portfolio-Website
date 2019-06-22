@@ -1,0 +1,35 @@
+#about {
+  .fp-next, .fp-prev {
+    position: absolute;
+    z-index: 100;
+    top: 50vh;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    opacity: 0.5;
+  }
+  .fp-next {
+    right: 0px;
+  }
+  .fp-prev {
+    left: 0px;
+  }
+}
+
+#projects {
+  .fp-next, .fp-prev {
+    position: absolute;
+    z-index: 100;
+    top: 50vh;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    opacity: 0.5;
+  }
+  .fp-next {
+    right: 0px;
+  }
+  .fp-prev {
+    left: 0px;
+  }
+}

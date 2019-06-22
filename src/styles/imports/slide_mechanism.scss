@@ -1,0 +1,18 @@
+.fp-slidesContainer {
+
+  transform: none!important;
+  .slide {
+    position: absolute;
+    transition: all 700ms ease 0s;
+    width: 100%!important;
+    left: -100%!important;
+
+    &.active {
+      left: 0px!important;
+    }
+
+    &.active ~ .slide {
+      left: 100%!important;
+    }
+  }
+}
