@@ -2,13 +2,13 @@
   <div id="app">
     <NavBar></NavBar>
 
-    <full-page :options="options" id="fullpage">
+    <full-page ref="fullpage" :options="options" id="fullpage">
 
       <div class="section">
         <Welcome></Welcome>
       </div>
 
-      <div class="section" id="about">
+      <div class="section about">
         <div class="inner-section">
           <h1>About Me</h1>
           <img class="fp-prev" src="./assets/arrow-left.svg" alt="left arrow">
@@ -16,7 +16,7 @@
           <div class="slide">
             <About></About>
           </div>
-          <div class="slide" id="timeline">
+          <div class="slide">
             <Timeline></Timeline>
           </div>
         </div>
@@ -26,7 +26,7 @@
         <OpenSource></OpenSource>
       </div>
 
-      <div class="section" id="projects">
+      <div class="section portfolio">
         <h1>Personal Projects</h1>
         <img class="fp-prev" src="./assets/arrow-left.svg" alt="left arrow">
         <img class="fp-next" src="./assets/arrow-right.svg" alt="right arrow">
@@ -97,9 +97,6 @@
   text-align: center;
   font-size: 1.8rem;
 }
-#about {
-  position: relative;
-}
 footer {
   display: block;
   margin: auto;
@@ -114,7 +111,7 @@ footer {
   .inner-section h1, .section h1 {
     font-size: 1.4rem;
   }
-  #about {
+  .about {
     height: 2000px!important;
   }
 }
@@ -172,7 +169,6 @@ export default {
         menu: '#navList',
         navigation: true,
         autoScrolling: true,
-        normalScrollElements: '#timeline',
         slidesNavigation: true,
         anchors: ['welcome', 'about', 'opensource', 'portfolio', 'contact'],
         sectionsColor: ['#2E1114', '#e6d8e8', '#c7bbc9', '#e6d8e8', '#c7bbc9']
@@ -181,7 +177,7 @@ export default {
     }
   },
   mounted () {
-    observer.observe(document.querySelector('#projects'), {
+    observer.observe(document.querySelector('.portfolio'), {
       attributes: true,
       characterData: true,
       childList: true,
