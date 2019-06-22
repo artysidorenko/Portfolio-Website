@@ -111,8 +111,15 @@ footer {
   .inner-section h1, .section h1 {
     font-size: 1.4rem;
   }
-  .about {
-    height: 2000px!important;
+  .project-titles {
+    padding-top: 0px;
+    strong {
+      font-size: 1rem;
+      &::before {
+        white-space: pre;
+        content: "\A";
+      }
+    }
   }
 }
 </style>

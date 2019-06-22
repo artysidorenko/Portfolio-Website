@@ -86,6 +86,21 @@ p {
   line-height: 20px;
   bottom: 20px;
 }
+@media screen and (max-width: 700px) {
+  footer, p {
+    line-height: 10px;
+    margin: 0px;
+  }
+  footer {
+    height: 100px;
+    a {
+      line-height: 20px!important;
+    }
+  }
+  p {
+    height: 50px;
+  }
+}
 </style>
 
 <script>

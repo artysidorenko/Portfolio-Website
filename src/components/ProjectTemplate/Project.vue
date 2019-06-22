@@ -198,6 +198,24 @@ export default {
   cursor: pointer;
 }
 
+@media screen and (max-width: 700px) {
+  .frame {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .thumbnail {
+    width: auto;
+    height: 100px;
+  }
+  .wrapper {
+    margin: 0px;
+  }
+  .overlay {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .modal {
     flex-direction: column;
@@ -215,14 +233,14 @@ export default {
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 701px) {
   .frame {
     width: 350px !important;
     height: 225px !important;
   }
 }
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 700px){
   .modal__image {
     width: 100%;
   }

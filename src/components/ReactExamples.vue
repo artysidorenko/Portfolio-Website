@@ -71,5 +71,13 @@ export default {
   h2 {
     font-size: 1.1rem;
   }
+  .frame {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px;
+    grid-gap: 15px 15px;
+    height: auto;
+  }
 }
 </style>

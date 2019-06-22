@@ -63,6 +63,17 @@ img {
     width: 80%;
     height: auto;
   }
+  h2 {
+    font-size: 0.8rem;
+  }
+  ul {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  p, li {
+    font-size: 0.6rem;
+    // margin-bottom: 0px;
+  }
 }
 </style>
 

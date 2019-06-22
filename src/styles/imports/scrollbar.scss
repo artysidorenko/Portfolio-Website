@@ -63,3 +63,8 @@ span {
 .fp-slidesNav ul li {
   margin: 10px;
 }
+
+@media screen and (max-width: 700px) {
+  .fp-slidesNav {display: none}
+  .fp-right {opacity: 0.3}
+}

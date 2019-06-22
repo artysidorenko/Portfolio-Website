@@ -58,15 +58,16 @@
     padding: 0;
     margin: 0 5px;
     img {
-      max-width: 50%;
+      max-width: 40%;
       margin: 10px;
     }
     div {
-      padding-top: 5px;
+      padding-top: 0px;
       max-width: 75%;
       h2 {
         font-size: 1.2rem;
-        padding-top: 5px;
+        padding-top: 0px;
+        font-size: 1.1rem;
       }
       ul {
         padding: 0;
