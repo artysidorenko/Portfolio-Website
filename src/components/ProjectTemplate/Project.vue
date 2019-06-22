@@ -205,7 +205,7 @@ export default {
     height: auto;
   }
   .thumbnail {
-    width: auto;
+    width: 100%;
     height: 100px;
   }
   .wrapper {
@@ -213,6 +213,9 @@ export default {
   }
   .overlay {
     display: none;
+  }
+  .modal-image {
+    width: 75%
   }
 }
 
