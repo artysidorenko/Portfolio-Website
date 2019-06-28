@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    
+
     <div @click="hiddenOff" class="frame">
       <img class="img-fluid thumbnail" :src="getImgUrl(img)" :alt="name">
       <p class="overlay">{{ name }} - Click to Learn More</p>
@@ -249,4 +249,3 @@ export default {
   }
 }
 </style>
-

@@ -4,7 +4,7 @@
     <div class="timeline-item" date-is="2017-2018">
       <h2>Self-teach programming and begin working on personal projects</h2>
       <p
-      mobile-content="After completing FreeCodeCamp Full-stack web certification began to work on programming projects, with a focus on React and Vue." 
+      mobile-content="After completing FreeCodeCamp Full-stack web certification began to work on programming projects, with a focus on React and Vue."
       desktop-content="From 2017 onwards began casually learning web development (FreeCodeCamp) and Computer programming (Revature online curriculum - Java) more intensively. As my enthusiasm grew I began to devote more and more of my time, also exploring frameworks including Node/Express.js, and React, and began to work on tangible projects. Also completed the FCC Full-stack Web Certification."
       ></p>
     </div>

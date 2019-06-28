@@ -78,7 +78,6 @@
   font-weight: bold!important;
 }
 
-
 .navbar-toggler {
     border: none;
     padding: 0;
@@ -136,23 +135,23 @@ import PHPExamples from './components/PHPExamples'
 import Contact from './components/Contact'
 
 function toggleActiveTitleClass (activeTitle, firstInactive, secondInactive) {
-      document.getElementsByClassName(activeTitle)[0].classList.add('active-slide-title')
-      document.getElementsByClassName(firstInactive)[0].classList.remove('active-slide-title')
-      document.getElementsByClassName(secondInactive)[0].classList.remove('active-slide-title')
-    }
+  document.getElementsByClassName(activeTitle)[0].classList.add('active-slide-title')
+  document.getElementsByClassName(firstInactive)[0].classList.remove('active-slide-title')
+  document.getElementsByClassName(secondInactive)[0].classList.remove('active-slide-title')
+}
 
-let observer = new MutationObserver(function(mutations) {
-      mutations.forEach(function(mutation) {
-        // console.log(mutation)
-        let { classList } = mutation.target
-        let { oldValue } = mutation
-        if (classList.contains('active') && !oldValue.includes('active') && oldValue.includes('slide')) {
-          if (oldValue.includes('react-slide')) toggleActiveTitleClass('react-title', 'static-title', 'php-title')
-          if (oldValue.includes('static-slide')) toggleActiveTitleClass('static-title', 'react-title', 'php-title')
-          if (oldValue.includes('php-slide')) toggleActiveTitleClass('php-title', 'static-title', 'react-title')
-        }
-      })
-    })
+let observer = new MutationObserver(function (mutations) {
+  mutations.forEach(function (mutation) {
+    // console.log(mutation)
+    let { classList } = mutation.target
+    let { oldValue } = mutation
+    if (classList.contains('active') && !oldValue.includes('active') && oldValue.includes('slide')) {
+      if (oldValue.includes('react-slide')) toggleActiveTitleClass('react-title', 'static-title', 'php-title')
+      if (oldValue.includes('static-slide')) toggleActiveTitleClass('static-title', 'react-title', 'php-title')
+      if (oldValue.includes('php-slide')) toggleActiveTitleClass('php-title', 'static-title', 'react-title')
+    }
+  })
+})
 
 export default {
   name: 'app',
