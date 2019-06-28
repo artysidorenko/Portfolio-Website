@@ -7,7 +7,7 @@
         img="ghstats.png"
         visit="https://ghstats-arty.herokuapp.com/"
         desc="Example GitHub API Data Visualisation Dashboard."
-        tools="ReactJS, GraphQL/Apollo, D3js, OAuth (with Node.js and Webpack)"
+        tools="ReactJS, GraphQL/Apollo, D3js, OAuth (with Node.js and Webpack), with additional Webtask.io serverless endpoint"
         source="https://github.com/artysidorenko/ghstats"
       ></Project>
 

@@ -2,17 +2,28 @@
   <div class="wrapper">
     <img src="../assets/profilepic.jpg" alt="Profile Photo">
     <div>
-      <h2 class="">Tech Skills</h2>
-      <ul class="">
+      <h3>Tech Skills</h3>
+      <ul>
         <li>
-          <strong>Front-End:</strong> JavaScript, jQuery, CSS & SCSS, HTML, React.js & Redux
+          <strong>Front-End:</strong> <span
+          desktop-content="HTML and CSS (SCSS), JavaScript including jQuery, Vue.js & Vuex, and React.js & Redux"
+          mobile-content="JavaScript, jQuery, CSS & SCSS, HTML, Vue.js, React.js & Redux"
+          ></span>
         </li>
         <li>
-          <strong>Back-End & Database:</strong> Node.js & Express; SQL and MongoDB; REST APIs and Socket.io
+          <strong>Back-End & Database:</strong>
+          <span
+          desktop-content="PHP, including OOP principles and Symfony/Laravel; Node.js/Express; SQL and MongoDB together with ORM tools; REST APIs"
+          mobile-content="PHP (Symfony/Laravel), Node.js/Express; SQL and MongoDB; REST APIs"
+          ></span>
         </li>
         <li>
-          <strong>Other:</strong> Git version-control, Meteor Full-stack Framework, Linux OS, also some experience with Java (Eclipse/Maven,
-          together with Spring Framework)
+          <strong>Other:</strong>
+          <span
+          desktop-content="Wide range of tools: all major operating systems including Linux; Git version control; build and deployment tools such as Webpack; Meteor full-stack framework; some experience with Java (including Spring and Maven); as well as experience with Drupal CMS platform"
+          mobile-content="Git version-control, Meteor Full-stack Framework, Linux OS, also some experience with Java (Eclipse/Maven,
+          together with Spring Framework)"
+          ></span>
         </li>
       </ul>
     </div>
@@ -30,7 +41,7 @@
   img {
     align-self: center;
     box-sizing: border-box;
-    max-width: 30%;
+    max-width: 250px;
     margin: 0 40px;
     height: auto;
   }
@@ -40,15 +51,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 40%;
-    h2 {
+    max-width: 450px;
+    h3 {
       text-align: center;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
     ul {
       display: block;
+      
+      li {
+        margin-top: 10px;
+      }
     }
   }
+}
+
+span {
+  &::after{
+  content: attr(desktop-content)}
 }
 
 @media screen and (max-width: 700px) {
@@ -72,8 +92,14 @@
       ul {
         padding: 0;
         * {font-size: 0.8rem;}
+        li {margin-top: 0;}
       }
     }
+  }
+
+  span {
+    &::after{
+    content: attr(mobile-content)}
   }
 }
 </style>
