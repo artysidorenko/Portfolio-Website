@@ -6,7 +6,7 @@
       <ul>
         <li>
           <strong>Front-End:</strong> <span
-          desktop-content="HTML and CSS (SCSS), JavaScript including jQuery, Vue.js & Vuex, and React.js & Redux"
+          desktop-content="HTML and CSS (SCSS, and Bootstrap), JavaScript including jQuery, Vue.js & Vuex, and React.js & Redux"
           mobile-content="JavaScript, jQuery, CSS & SCSS, HTML, Vue.js, React.js & Redux"
           ></span>
         </li>
