@@ -33,7 +33,7 @@
         >CC 3.0 BY</a>
       </p>
       <p>
-        Site built by <a class="footer__link" target="_blank" href="https://github.com/artysidorenko">pjsmooth/Arty Sidorenko</a> using Vue.js & <a target="_blank" href="https://github.com/alvarotrigo/vue-fullpage.js">vue-fullpage.js</a>
+        Site built by <a class="footer__link" target="_blank" href="https://github.com/artysidorenko">pjsmooth/Arty Sidorenko</a> using Vue.js & <a target="_blank" href="https://github.com/alvarotrigo/vue-fullpage.js">vue-fullpage.js</a>. Source code available on <a target="_blank" href="https://github.com/artysidorenko/Portfolio-Website">GitHub</a>.
       </p>
     </footer>
   </div>

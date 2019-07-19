@@ -31,9 +31,9 @@
         <img class="fp-prev" src="./assets/arrow-left.svg" alt="left arrow">
         <img class="fp-next" src="./assets/arrow-right.svg" alt="right arrow">
         <h2 class="project-titles">
-          <strong class="react-title active-slide-title">React.js based Webapps</strong> /
-          <strong class="static-title">Static Node & Express Webapps</strong> /
-          <strong class="php-title">PHP based Webapps</strong>
+          <strong class="react-title active-slide-title">React.js</strong> /
+          <strong class="static-title">Static Node & Express</strong> /
+          <strong class="php-title">PHP</strong>
         </h2>
         <div class="slide react-slide" ref="react">
           <ReactExamples></ReactExamples>
