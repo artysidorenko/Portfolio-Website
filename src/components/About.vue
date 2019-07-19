@@ -31,6 +31,7 @@
 </template>
 
 <style lang="scss" scoped>
+@import "../styles/_variables.scss";
 .wrapper {
   margin-top: 50px;
   display: flex;
@@ -53,6 +54,7 @@
     justify-content: center;
     max-width: 450px;
     h3 {
+      font-weight: bold;
       text-align: center;
       font-size: 1.4rem;
     }
@@ -69,6 +71,17 @@
 span {
   &::after{
   content: attr(desktop-content)}
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    border: 2px solid $bg-dark;
+    background-color: $bg-light;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+    z-index: 99999
+  }
 }
 
 @media screen and (max-width: 700px) {

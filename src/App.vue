@@ -106,6 +106,21 @@ footer {
   text-align: center;
 }
 
+h1 {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 701px) {
+  h1 {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .project-titles {
+    padding-top: 0px;
+    margin-bottom: -20px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .inner-section h1, .section h1 {
     font-size: 1.4rem;

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <div class="frame">
       <a href="https://en-gb.facebook.com/public/Arty-Sidorenko" rel="nofollow" target="_blank">
         <font-awesome-layers class="fa-4x">
@@ -86,6 +86,22 @@ p {
   line-height: 20px;
   bottom: 20px;
 }
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    border: 2px solid $bg-dark;
+    background-color: $bg-neutral;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+    z-index: 99999
+  }
+  .wrapper {
+    height: auto;
+    padding-bottom: 10px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   footer, p {
     line-height: 10px;

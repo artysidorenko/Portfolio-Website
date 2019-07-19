@@ -66,6 +66,7 @@ h2 {
 
 .timeline-item {
   padding: 2em;
+  // padding-bottom: 0px;
   position: relative;
   color: rgba(0, 0, 0, 0.7);
   border-left: 2px solid rgba(0, 0, 0, 0.3);
@@ -100,6 +101,34 @@ h2 {
       rgba(0, 0, 0, 0)
     )
     1 100%;
+}
+
+@media screen and (min-width: 701px) {
+  h2 {
+    padding-top: 1em;
+  }
+  .timeline-item {
+    padding: 0.5em;
+    transform: translateY(10px);
+  }
+  .wrapper {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    border: 2px solid $bg-dark;
+    background-color: $bg-light;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+    z-index: 99999
+  }
+  .wrapper {
+    height: auto;
+    padding-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 700px) {

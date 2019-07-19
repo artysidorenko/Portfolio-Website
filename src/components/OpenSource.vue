@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <div>
       <h2>
         <a target="_blank" href="https://focallocal.org">Focallocal.org</a>
@@ -34,7 +34,8 @@
 <style lang="scss" scoped>
 h2 {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 ul {
   max-width: 900px;
@@ -52,10 +53,25 @@ div > a {
   margin: auto;
 }
 img {
-  height: 400px;
+  height: 300px;
   width: auto;
   display: block;
   margin: auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    border: 2px solid $bg-dark;
+    background-color: $bg-neutral;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+    z-index: 99999;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 700px) {
