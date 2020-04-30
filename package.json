@@ -17,7 +17,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.22",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "sass-resources-loader": "^2.0.1",
     "vue": "^2.5.2",
     "vue-fullpage.js": "^0.1.3",
